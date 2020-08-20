@@ -23,3 +23,5 @@ Please Strictly follow git work flow documented by Atlassian Bitbucket, for more
 
 
 ![alt text](./docs/GitFlow.svg)
+
+Documentation of functional and non-functional requirements should be listed in wiki
