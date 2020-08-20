@@ -20,3 +20,6 @@ React.js front-end, with Java front-end
 ## Reminder
 
 Please Strictly follow git work flow documented by Atlassian Bitbucket, for more info please visit this [Link](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+
+
+![alt text](./docs/GitFlow.svg)
