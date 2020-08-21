@@ -1,1 +1,5 @@
+# Exclude dependency packages that can be downloaded
 node_modules/
+
+# Exclude text-editor/IDE setting file
+.vscode/
