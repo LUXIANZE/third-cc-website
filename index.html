@@ -5,16 +5,30 @@
 
         <!-- Bootstrap CSS CDN link, must load before other style sheet-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
 
         <!-- Mobile first metatag -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <div >
-            <a href="todo.html"><button>TODO List</button></a>
+        <div class="fullheight container">
+            <h1>Navigation Bar</h1>
+            <ul>
+                <li><a href="todo.html">TODO List</a></li>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#activities">Activities</a></li>
+            </ul>
+            
         </div>
-
-        <a href="#welcome">Welcome to 3rd CC website</a>
+        <div id="welcome" class="fullheight container">
+            <h2>Welcome to 3rd CC website.</h2>
+            <p>Insert welcome material, maybe use youtube video.</p>
+            <p>Link to Sign in/Sign up web app, put in this section.</p>
+        </div>
+        <div id="activities" class="fullheight container">
+            <h2>All activities previously</h2>
+            <p>should think of a way to retrieve latest few posts from API</p>
+        </div>
 
 
         <!-- Boostrap js CDN link-->
