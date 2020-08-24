@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
+
+        <!-- NAV PAGE, should be removed during production -->
         <div class="fullheight container">
             <h1>Navigation Bar</h1>
             <ul>
@@ -18,16 +20,37 @@
                 <li><a href="#welcome">Welcome</a></li>
                 <li><a href="#activities">Activities</a></li>
             </ul>
-            
         </div>
-        <div id="welcome" class="fullheight container">
-            <h2>Welcome to 3rd CC website.</h2>
-            <p>Insert welcome material, maybe use youtube video.</p>
-            <p>Link to Sign in/Sign up web app, put in this section.</p>
+
+        <!-- WELCOME PAGE -->
+        <div id="welcome" class="fullheight container-fluid">
+            <h2 class="display-1">Welcome to 3rd CC website.</h2>
+            <div class="row">
+                <div class="col-8">
+                    <p>welcome to 3rd CC club!</p>
+                    <p>Insert welcome material, maybe use youtube video.</p>
+                </div>
+                <div class="col-4">
+                    <button>Sign up for 3rd CC college club</button>
+                    <br/>
+                    <a href="#">If you already have an account, click on this link to sign in</a>
+                </div>
+            </div>
         </div>
+
+        <!-- ACTIVITIES PAGE -->
         <div id="activities" class="fullheight container">
             <h2>All activities previously</h2>
-            <p>should think of a way to retrieve latest few posts from API</p>
+            <p>should think of a way to retrieve latest few posts from API (get without authorisation)</p>
+            <div class="card centralise" style="width: 18rem;">
+                <h5>First Post</h5>
+            </div>
+            <div class="card">
+                <h5>Second Post</h5>
+            </div>
+            <div class="card">
+                <h5>Third Post</h5>
+            </div>
         </div>
 
 

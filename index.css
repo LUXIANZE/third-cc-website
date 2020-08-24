@@ -1,3 +1,11 @@
 .fullheight{
     height: 100vh;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.centralise{
+    align-self: center;
+}
