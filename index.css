@@ -9,3 +9,11 @@ html{
 .centralise{
     align-self: center;
 }
+
+.background1{
+    background-image: linear-gradient(#cfe6ff, white);
+}
+
+.background3{
+    background-image: linear-gradient(white, #cfe6ff);
+}
