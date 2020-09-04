@@ -1,7 +1,3 @@
-.fullheight{
-    height: 100vh;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -16,4 +12,62 @@ html{
 
 .background3{
     background-image: linear-gradient(white, #cfe6ff);
+}
+
+.bg-image1 {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./static/image/bg_image1.jpg);
+    background-size: cover;
+}
+
+.category-title {
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 1.3rem;
+}
+.checklist-label {
+    display: block;
+}
+
+.contact-wrapper form input, .contact-wrapper form textarea {
+    margin: 10px 15px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.contact-wrapper form textarea {
+    min-height: 150px;
+}
+
+.submit-btn {
+    width: 20% !important;
+}
+
+.error {
+    color: red;
+    font-size: 1.1rem;
+}
+
+.footer {
+    min-height: 50px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Tablets, Ipad */
+@media screen and (min-width: 601px) and (max-width: 1199px) {
+
+}
+
+/* Laptop, Desktop */
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 3.5rem !important;
+    }
+
+    .fullheight {
+        height: 100vh;
+    }
 }
