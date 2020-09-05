@@ -13,6 +13,7 @@ app.use(cors({ origin: true }));
 
 // build multiple CRUD interfaces:
 // Send mail to support when user submit form in customer page
+// AUTH config https://firebase.google.com/docs/functions/config-env
 app.post('/supportEmail', (req, res) => {
     const {mail, name, inquiry, company} = req.body;
     let transporter = nodemailer.createTransport({
@@ -21,8 +22,8 @@ app.post('/supportEmail', (req, res) => {
         secure: "false",
         port: 587,
         auth: {
-            user: "3rdcc1819@gmail.com",
-            pass: "3rdccfish",
+            user: functions.config().supportcontact.email,
+            pass: functions.config().supportcontact.cred,
         },
         tls: {
             // do not fail on invalid certs

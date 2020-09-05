@@ -28,13 +28,13 @@ html{
     display: block;
 }
 
-.contact-wrapper form input, .contact-wrapper form textarea {
+.contact-wrapper div input, .contact-wrapper div textarea {
     margin: 10px 15px;
     width: 60%;
     border-radius: 5px;
 }
 
-.contact-wrapper form textarea {
+.contact-wrapper div textarea {
     min-height: 150px;
 }
 

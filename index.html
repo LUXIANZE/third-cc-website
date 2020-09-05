@@ -74,13 +74,13 @@
                 </div>
                 <div class="col-md-7 contact-wrapper">
                     <h3>Enquiry Form</h3>
-                    <form onsubmit="return verify(this)" id="contact-form">
+                    <div id="contact-form">
                         <input type="text" id="name" name="name" placeholder="Your Name.."><br>
                         <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
                         <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
                         <p class="error"></p>
-                        <input class="submit-btn btn-success" type="submit" value="Submit">
-                    </form>
+                        <button id="contact-form-submit" class="submit-btn btn-success">Submit</button>
+                    </div>
                     <p class="error"></p>
                 </div>
             </div>
@@ -95,3 +95,4 @@
     </body>
 </html>
 <script src="./js/info.js"></script>
+<script src="./js/contact.js"></script>
