@@ -1,0 +1,11 @@
+{
+    "Document": ["Leaving School Cert", "Medical Report", "Co-Curriculum Cert", "Academic Result (SPM, MUET, STPM/Matric)", "Photocopy ID Card", "Photocopy Parent ID Card", "Passport Size Photo", "Enrollment Fee Pay Slip", "UM Offer Letter", "PTPTN/Scholarship Document"],
+    "Clothes": ["Formal Attire", "Sport Attire", "Jacket", "Jeans / Long Pants", "Short Pants", "Innerwear", "Slipper", "Formal Shoes", "Sport Shoes", "Socks"],
+    "Bedding": ["Single Bed Sheet", "Pillow", "Pillow Case", "Blanket", "Febreeze / Antiseptic Spray"],
+    "Catering": ["Cup", "Tumber", "Spoon", "Fork", "Dishes", "Dry Food"],
+    "Cleaning": ["Broom", "Dustpan", "Mop", "Cleaning Rag", "Garbage Bag", "Sponge", "Dishwasher"],
+    "Toiletries": ["Toothbrush", "Pail", "Hair & Body Shampoo", "Towel", "Facial Cleaner", "Toilet Paper / Tissue"],
+    "Laundry": ["Pail", "Detergent", "Brush", "Hanger", "Clothes Clip"],
+    "Electronic": ["Handphone", "Laptop", "Mouse", "Pendrive", "Charger", "Earphone", "Power Bank"],
+    "Others": ["Umbrella", "Extension Wire", "Coin", "Stationery", "Padlock"]
+}

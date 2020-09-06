@@ -4,6 +4,33 @@ This is a Web Site developed with html, css and javascript. To provide informati
 
 This Web Site will provide a link to another Web Application to enable communications between friends and ease the management as well as planning process of Activities Organisers.
 
+## Firebase Cloud Functions
+~~~
+cd functions
+npm i
+~~~
+
+## Firebase Project
+#### First Time Only
+~~~
+npm install -g firebase-tools
+firebase login
+~~~
+#### Emulate using local HTTP functions before deploy
+~~~
+firebase serve
+~~~
+#### Depoly
+~~~
+firebase deploy
+~~~
+#### Optional Flag
+~~~
+--only hosting
+--only functions
+~~~
+
+
 ## System Architecture
 
 

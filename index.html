@@ -25,19 +25,27 @@
         </div>
 
         <!-- WELCOME PAGE -->
-        <div id="welcome" class="fullheight container-fluid">
-            <h2 class="display-1">Welcome to 3rd CC website.</h2>
-            <div class="row">
-                <div class="col-8">
-                    <p>welcome to 3rd CC club!</p>
-                    <p>Insert welcome material, maybe use youtube video.</p>
+        <div id="welcome" class="fullheight container-fluid background1 text-center">
+            <h2 class="title">Welcome to 3rd CC Club.</h2>
+            <div class="row align-items-center mt-5">
+                <div class="col-12 col-md-8">
+                    <!-- Replace youtube video id (after embed before ?) -->
+                    <iframe src="https://youtube.com/embed/NXbOAY4Bc8Y?autoplay=1" width="90%" height="400px"></iframe>
                 </div>
-                <div class="col-4">
-                    <button>Sign up for 3rd CC college club</button>
+                <div class="col-md-3 bg-light py-5">
+                    <label>Interest and wanna get updated?</label>
                     <br/>
-                    <a href="#">If you already have an account, click on this link to sign in</a>
+                    <button class="btn-success">Sign up Now</button>
+                    <br/>
+                    <p class="mt-4"><a href="#">If you already have an account, click on this link to sign in</a></p>
                 </div>
             </div>
+        </div>
+
+        <!-- Info Page -->
+        <div id="info" class="container-fluid">
+            <h2 class="title text-center">Information</h2>
+            <div id="checklist" class="row pl-3"></div>
         </div>
 
         <!-- ACTIVITIES PAGE -->
@@ -57,9 +65,34 @@
             </div>
         </div>
 
+        <!-- Contact Us -->
+        <div id="contact" class="fullheight container-fluid mb-3">
+            <h2 class="title text-center">Contact Us</h2>
+            <div class="row align-items-center text-center">
+                <div class="col-md-5">
+                    <img src="./images/contact-us.jpg" width="80%">
+                </div>
+                <div class="col-md-7 contact-wrapper">
+                    <h3>Enquiry Form</h3>
+                    <div id="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name.."><br>
+                        <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
+                        <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
+                        <p class="error"></p>
+                        <button id="contact-form-submit" class="submit-btn btn-success">Submit</button>
+                    </div>
+                    <p class="error"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="footer"></footer>
+
         <!-- Boostrap js CDN link-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
+<script src="./js/info.js"></script>
+<script src="./js/contact.js"></script>
