@@ -12,10 +12,22 @@
     </head>
     <body>
 
+        <!-- SIDE NAV BAR -->
+        <div id="homePageSideNavBar" class="sideNavBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="todo.html">TODO List</a>
+            <a href="#welcome">Welcome</a>
+            <a href="#activities">Activities</a>
+        </div>
+
+        <!-- Button to open SideNavBar -->
+        <span class="openSideNavBarButton" onclick="openNav()">&#9776; open</span>
+
         <!-- NAV PAGE, should be removed during production -->
         <div class="wrapper  background1">
             <div class="fullheight container">
-                <h1>Navigation Bar</h1>
+                <h1>Navigation Page</h1>
+                <h6>This will be removed during production</h6>
                 <ul>
                     <li><a href="todo.html">TODO List</a></li>
                     <li><a href="#welcome">Welcome</a></li>
@@ -92,6 +104,15 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            function openNav() {
+              document.getElementById("homePageSideNavBar").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("homePageSideNavBar").style.width = "0";
+            }
+            </script>
     </body>
 </html>
 <script src="./js/info.js"></script>
