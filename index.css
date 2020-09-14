@@ -19,6 +19,16 @@ html{
     background-size: cover;
 }
 
+.about-describe, .mission {
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.about-describe {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
 .category-title {
     font-weight: bold;
     color: cornflowerblue;
@@ -29,8 +39,10 @@ html{
 }
 
 .contact-wrapper div input, .contact-wrapper div textarea {
+    font-size: 1.1rem;
+    padding: 5px 10px;
     margin: 10px 15px;
-    width: 60%;
+    width: 75%;
     border-radius: 5px;
 }
 
