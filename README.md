@@ -4,6 +4,9 @@ This is a Web Site developed with html, css and javascript. To provide informati
 
 This Web Site will provide a link to another Web Application to enable communications between friends and ease the management as well as planning process of Activities Organisers.
 
+## Project Management
+https://docs.google.com/spreadsheets/d/1q4Ps8VuAWSiH2gzK_R8Az2CzRz3TrE36NUZSeQCQP1w/edit
+
 ## Firebase Cloud Functions
 ~~~
 cd functions
