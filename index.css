@@ -2,15 +2,19 @@ html{
     scroll-behavior: smooth;
 }
 
-.centralise{
+#main {
+    padding-left: 60px;
+}
+
+.centralise {
     align-self: center;
 }
 
-.background1{
+.background1 {
     background-image: linear-gradient(#cfe6ff, white);
 }
 
-.background3{
+.background3 {
     background-image: linear-gradient(white, #cfe6ff);
 }
 
@@ -110,6 +114,7 @@ html{
     z-index: 1; /* Stay on top */
     transition-property: background-color;
     transition-duration: 0.5s;
+    margin-left: -60px;
 }
 
 /* Make Open Side Nav button  stay floating across all pages */
