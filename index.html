@@ -25,82 +25,87 @@
         <!-- Button to open SideNavBar -->
         <span class="openSideNavBarButton" onclick="openNav()">&#9776;</span>
 
-        <!-- NAV PAGE, should be removed during production -->
-        <div id="first-section" class="wrapper background1">
-            <div class="fullheight container">
-                <h1>Navigation Page</h1>
-                <h6>This will be removed during production</h6>
-                <ul>
-                    <li><a href="todo.html">TODO List</a></li>
-                    <li><a href="#welcome">Welcome</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                </ul>
+        <div id="main" class="background1">
+            <div id="pushedPageMask" onclick="closeNav()" style="display: none;">
             </div>
-        </div>
-
-        <!-- WELCOME PAGE -->
-        <div id="welcome" class="fullheight container-fluid text-center">
-            <h2 class="title">Welcome to 3rd CC Club.</h2>
-            <div class="row align-items-center mt-5">
-                <div class="col-12 col-md-8">
-                    <!-- Replace youtube video id (after embed before ?) -->
-                    <iframe src="https://youtube.com/embed/NXbOAY4Bc8Y?autoplay=1" width="90%" height="400px"></iframe>
-                </div>
-                <div class="col-md-3 bg-light py-5">
-                    <label>Interest and wanna get updated?</label>
-                    <br/>
-                    <button class="btn-success">Sign up Now</button>
-                    <br/>
-                    <p class="mt-4"><a href="#">If you already have an account, click on this link to sign in</a></p>
+            <!-- NAV PAGE, should be removed during production -->
+            <div id="first-section" class="wrapper">
+                <div class="fullheight container">
+                    <h1>Navigation Page</h1>
+                    <h6>This will be removed during production</h6>
+                    <ul>
+                        <li><a href="todo.html">TODO List</a></li>
+                        <li><a href="#welcome">Welcome</a></li>
+                        <li><a href="#activities">Activities</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
 
-        <!-- Info Page -->
-        <div id="info" class="fullheight container-fluid">
-            <h2 class="title text-center">Information</h2>
-            <div id="checklist" class="row pl-3"></div>
-        </div>
-
-        <!-- ACTIVITIES PAGE -->
-        <div class="wrapper background3">
-            <div id="activities" class="fullheight container">
-                <h2>All activities previously</h2>
-                <p>should think of a way to retrieve latest few posts from API (get without authorisation)</p>
-                <div class="card centralise" style="width: 18rem;">
-                    <h5>First Post</h5>
-                </div>
-                <div class="card">
-                    <h5>Second Post</h5>
-                </div>
-                <div class="card">
-                    <h5>Third Post</h5>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact Us -->
-        <div id="contact" class="fullheight container-fluid mb-3">
-            <h2 class="title text-center">Contact Us</h2>
-            <div class="row align-items-center text-center">
-                <div class="col-md-5">
-                    <img src="./images/contact-us.jpg" width="80%">
-                </div>
-                <div class="col-md-7 contact-wrapper">
-                    <h3>Enquiry Form</h3>
-                    <div id="contact-form">
-                        <input type="text" id="name" name="name" placeholder="Your Name.."><br>
-                        <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
-                        <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
-                        <p class="error"></p>
-                        <button id="contact-form-submit" class="submit-btn btn-success">Submit</button>
+            <!-- WELCOME PAGE -->
+            <div id="welcome" class="fullheight container-fluid text-center">
+                <h2 class="title">Welcome to 3rd CC Club.</h2>
+                <div class="row align-items-center mt-5">
+                    <div class="col-12 col-md-8">
+                        <!-- Replace youtube video id (after embed before ?) -->
+                        <iframe src="https://youtube.com/embed/NXbOAY4Bc8Y?autoplay=1" width="90%" height="400px"></iframe>
                     </div>
-                    <p class="error"></p>
+                    <div class="col-md-3 bg-light py-5">
+                        <label>Interest and wanna get updated?</label>
+                        <br/>
+                        <button class="btn-success">Sign up Now</button>
+                        <br/>
+                        <p class="mt-4"><a href="#">If you already have an account, click on this link to sign in</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <footer id="footer" class="footer"></footer>
+            <!-- Info Page -->
+            <div id="info" class="fullheight container-fluid">
+                <h2 class="title text-center">Information</h2>
+                <div id="checklist" class="row pl-3"></div>
+            </div>
+
+            <!-- ACTIVITIES PAGE -->
+            <div class="wrapper">
+                <div id="activities" class="fullheight container">
+                    <h2>All activities previously</h2>
+                    <p>should think of a way to retrieve latest few posts from API (get without authorisation)</p>
+                    <div class="card centralise" style="width: 18rem;">
+                        <h5>First Post</h5>
+                    </div>
+                    <div class="card">
+                        <h5>Second Post</h5>
+                    </div>
+                    <div class="card">
+                        <h5>Third Post</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div id="contact" class="fullheight container-fluid mb-3">
+                <h2 class="title text-center">Contact Us</h2>
+                <div class="row align-items-center text-center">
+                    <div class="col-md-5">
+                        <img src="./images/contact-us.jpg" width="80%">
+                    </div>
+                    <div class="col-md-7 contact-wrapper">
+                        <h3>Enquiry Form</h3>
+                        <div id="contact-form">
+                            <input type="text" id="name" name="name" placeholder="Your Name.."><br>
+                            <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
+                            <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
+                            <p class="error"></p>
+                            <button id="contact-form-submit" class="submit-btn btn-success">Submit</button>
+                        </div>
+                        <p class="error"></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" class="footer"></footer>
+        </div>
+        
 
         <!-- Boostrap js CDN link-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -109,10 +114,18 @@
         <script>
             function openNav() {
               document.getElementById("homePageSideNavBar").style.width = "250px";
+              document.getElementById("main").classList.remove("pullStyle");
+              document.getElementById("main").classList.add("pushStyle");
+              document.getElementById("pushedPageMask").style.removeProperty("display");
+              document.getElementById("pushedPageMask").classList.add("pageMaskStyle");
             }
             
             function closeNav() {
               document.getElementById("homePageSideNavBar").style.width = "0";
+              document.getElementById("main").classList.remove("pushStyle");
+              document.getElementById("main").classList.add("pullStyle");
+              document.getElementById("pushedPageMask").style.display = "none";
+              document.getElementById("pushedPageMask").classList.remove("pageMaskStyle");
             }
             </script>
     </body>

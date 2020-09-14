@@ -90,8 +90,26 @@ html{
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    padding-left: 60px;
+.pushStyle {
+    margin-left: 250px;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+.pullStyle {
+    margin-left: 0px;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+.pageMaskStyle {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%; /* 100% Full-height */
+    width: 100%; /* 100% Full-width */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 /* Make Open Side Nav button  stay floating across all pages */
