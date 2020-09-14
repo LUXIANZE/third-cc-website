@@ -19,15 +19,19 @@
             <a href="#first-section">First Section</a>
             <a href="#welcome">Welcome</a>
             <a href="#info">Info</a>
+            <a href="#about">About</a>
             <a href="#activities">Activities</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <!-- Button to open SideNavBar -->
         <span class="openSideNavBarButton" onclick="openNav()">&#9776;</span>
 
         <div id="main" class="background1">
-            <div id="pushedPageMask" onclick="closeNav()" style="display: none;">
-            </div>
+
+            <!-- Masking Page when nav bar is opened -->
+            <div id="pushedPageMask" onclick="closeNav()" style="display: none;"></div>
+            
             <!-- NAV PAGE, should be removed during production -->
             <div id="first-section" class="wrapper">
                 <div class="fullheight container">
@@ -65,6 +69,33 @@
                 <div id="checklist" class="row pl-3"></div>
             </div>
 
+            <!-- ABOUT PAGE -->
+            <div id="about" class="fullheight container-fluid text-center">
+                <h2 class="title">About Third CC</h2>
+                <div class="row align-items-center mt-5 px-3">
+                    <div class="col-md-6 text-left px-5">
+                        <div id="what-is-third-cc">
+                            <h5><b>Third CC is a Chinese Community for students in Third Residential College of University Malaya (UM)</b></h5>
+                            <p class="about-describe">
+                                Third CC is a place for you to relax and make friends in you uni life. 
+                                Third CC normally known as <b>Home of Fish</b>. 
+                                All member of Third CC is act as a fish and Third CC is the home for all these fishes. 
+                                This also indicate that Third CC is not just a community or society for the existing students who stay in Third Residential College of UM. 
+                                It is a place for all fishes to join in anytime althought you are graduated from UM or not staying in Third College. 
+                                Third CC is always welcome you for joining and have fun with us.
+                            </p>
+                        </div>
+                        <div id="mission-vision" class="w-75 mx-auto text-center mt-5">
+                            <h3>Our Mission</h3>
+                            <p class="mission">A platform for UM Chinese students to build bonding with each others and release stress</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-items-center text-center">
+                        <img src="./images/fishes.jpg" width="65%" alt="about third-cc"/>
+                    </div>
+                </div>
+            </div>
+
             <!-- ACTIVITIES PAGE -->
             <div class="wrapper">
                 <div id="activities" class="fullheight container">
@@ -83,30 +114,29 @@
             </div>
 
             <!-- Contact Us -->
-            <div id="contact" class="fullheight container-fluid mb-3">
+            <div id="contact" class="fullheight container-fluid">
                 <h2 class="title text-center">Contact Us</h2>
-                <div class="row align-items-center text-center">
-                    <div class="col-md-5">
-                        <img src="./images/contact-us.jpg" width="80%">
+                <div class="row align-items-center text-center my-4">
+                    <div class="col-md-6">
+                        <img src="./images/contact-us.jpg" width="90%">
                     </div>
-                    <div class="col-md-7 contact-wrapper">
+                    <div class="col-md-6 contact-wrapper">
                         <h3>Enquiry Form</h3>
-                        <div id="contact-form">
+                        <div id="contact-form" class="contact-form">
                             <input type="text" id="name" name="name" placeholder="Your Name.."><br>
                             <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
                             <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
                             <p class="error"></p>
-                            <button id="contact-form-submit" class="submit-btn btn-success">Submit</button>
+                            <button id="contact-form-submit" class="submit-btn btn btn-success">Submit</button>
                         </div>
-                        <p class="error"></p>
                     </div>
                 </div>
             </div>
 
             <footer id="footer" class="footer"></footer>
+
         </div>
         
-
         <!-- Boostrap js CDN link-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
