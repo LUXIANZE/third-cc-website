@@ -3,3 +3,6 @@ node_modules/
 
 # Exclude text-editor/IDE setting file
 .vscode/
+
+# Exclude MacOS file
+.DS_Store
