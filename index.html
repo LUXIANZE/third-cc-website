@@ -17,7 +17,6 @@
         <div id="homePageSideNavBar" class="sideNavBar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="todo.html">TODO List</a>
-            <a href="#first-section">First Section</a>
             <a href="#welcome">Welcome</a>
             <a href="#info">Info</a>
             <a href="#about">About</a>
@@ -32,19 +31,6 @@
 
             <!-- Masking Page when nav bar is opened -->
             <div id="pushedPageMask" onclick="closeNav()" style="display: none;"></div>
-            
-            <!-- NAV PAGE, should be removed during production -->
-            <div id="first-section" class="wrapper">
-                <div class="fullheight container">
-                    <h1>Navigation Page</h1>
-                    <h6>This will be removed during production</h6>
-                    <ul>
-                        <li><a href="todo.html">TODO List</a></li>
-                        <li><a href="#welcome">Welcome</a></li>
-                        <li><a href="#activities">Activities</a></li>
-                    </ul>
-                </div>
-            </div>
 
             <!-- WELCOME PAGE -->
             <div id="welcome" class="fullheight container-fluid text-center">
@@ -123,7 +109,7 @@
                     </div>
                     <div class="col-md-6 contact-wrapper">
                         <h3>Enquiry Form</h3>
-                        <div id="contact-form" class="contact-form">
+                        <div id="contact-form" class="contact-form text-center">
                             <input type="text" id="name" name="name" placeholder="Your Name.."><br>
                             <input type="text" id="email" name="email" placeholder="Your Email Address.."><br>
                             <textarea id="enquiry" name="enquiry" placeholder="Your feedback / inquiry / comments here.."></textarea><br>
@@ -134,7 +120,9 @@
                 </div>
             </div>
 
-            <footer id="footer" class="footer"></footer>
+            <footer id="footer" class="footer fixed-bottom bg-dark text-center">
+                <h5 class="text-white my-2">UM Third-CC @2020</h5>
+            </footer>
 
         </div>
         
