@@ -4,6 +4,7 @@ html{
 
 #main {
     padding-left: 60px;
+    padding-bottom: 35px;
 }
 
 .centralise {
@@ -45,7 +46,7 @@ html{
 .contact-wrapper div input, .contact-wrapper div textarea {
     font-size: 1.1rem;
     padding: 5px 10px;
-    margin: 10px 15px;
+    margin: 10px 0;
     width: 75%;
     border-radius: 5px;
 }
@@ -54,17 +55,13 @@ html{
     min-height: 150px;
 }
 
-.submit-btn {
-    width: 20% !important;
-}
-
 .error {
     color: red;
     font-size: 1.1rem;
 }
 
 .footer {
-    min-height: 50px;
+    min-height: 35px;
 }
 
 /* The side navigation menu */
@@ -149,17 +146,11 @@ html{
     .openSideNavBarButton{
         font-size: 18px;
     }
-
-    .fullheight {
-        padding-left: 50px;
-    }
 }
 
 /* Tablets, Ipad */
 @media screen and (min-width: 601px) and (max-width: 1199px) {
-    .fullheight {
-        padding-left: 50px;
-    }
+    
 }
 
 /* Laptop, Desktop */
@@ -169,6 +160,6 @@ html{
     }
 
     .fullheight {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
