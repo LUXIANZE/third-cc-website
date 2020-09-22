@@ -14,10 +14,20 @@ fetch("../static/checklist.json")
         category_title.innerHTML = category;
         col_div.appendChild(category_title);
         elements.forEach(ele => {
+            let checklistItem = document.createElement("div");
+            checklistItem.classList.add("form-group");
+            checklistItem.classList.add("checklist-item");
+            let checkbox = document.createElement("input");
+            checkbox.setAttribute("type", "checkbox");
+            checkbox.classList.add("form-check-input");
+            checkbox.setAttribute("id", ele);
             let label = document.createElement("label");
             label.innerHTML = ele;
-            label.setAttribute("class","checklist-label");
-            col_div.appendChild(label);
+            label.classList.add("form-check-label");
+            label.setAttribute("for", ele);
+            checklistItem.appendChild(checkbox);
+            checklistItem.appendChild(label);
+            col_div.appendChild(checklistItem);
             container.appendChild(col_div);
         })
     });
