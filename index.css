@@ -60,6 +60,18 @@ html{
     font-size: 1.1rem;
 }
 
+.board-card * {
+    display: block;
+}
+
+.board-card span {
+    font-weight: 600;
+}
+
+.board-card {
+    padding: 10px;
+}
+
 .footer {
     min-height: 35px;
 }
