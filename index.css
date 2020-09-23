@@ -60,6 +60,10 @@ html{
     font-size: 1.1rem;
 }
 
+.board-card {
+    padding: 10px;
+}
+
 .board-card * {
     display: block;
 }
@@ -68,8 +72,10 @@ html{
     font-weight: 600;
 }
 
-.board-card {
-    padding: 10px;
+.board-card img {
+    height: 200px !important;
+    width: auto;
+    margin: auto;
 }
 
 .footer {
@@ -157,6 +163,10 @@ html{
 
     .openSideNavBarButton{
         font-size: 18px;
+    }
+
+    .board-card img {
+        height: 150px !important;
     }
 }
 
