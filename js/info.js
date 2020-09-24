@@ -1,4 +1,4 @@
-fetch("../static/checklist.json")
+fetch("../static/json/checklist.json")
 .then(res => res.json())
 .then(checklist => {
     let categories = Object.keys(checklist);
