@@ -39,9 +39,6 @@ html{
     color: cornflowerblue;
     font-size: 1.3rem;
 }
-.checklist-label {
-    display: block;
-}
 
 .contact-wrapper div input, .contact-wrapper div textarea {
     font-size: 1.1rem;
