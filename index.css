@@ -57,6 +57,24 @@ html{
     font-size: 1.1rem;
 }
 
+.board-card {
+    padding: 10px;
+}
+
+.board-card * {
+    display: block;
+}
+
+.board-card span {
+    font-weight: 600;
+}
+
+.board-card img {
+    height: 200px !important;
+    width: auto;
+    margin: auto;
+}
+
 .footer {
     min-height: 35px;
 }
@@ -142,6 +160,10 @@ html{
 
     .openSideNavBarButton{
         font-size: 18px;
+    }
+
+    .board-card img {
+        height: 150px !important;
     }
 }
 
