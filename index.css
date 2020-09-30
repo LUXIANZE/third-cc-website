@@ -75,6 +75,31 @@ html{
     margin: auto;
 }
 
+.food-card {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.food-card *{
+    display: inline-block;
+}
+
+.food-description {
+    background-color: rgb(114, 114, 114);
+    padding: 1.5rem 0.5rem;
+    margin-left: 0.5rem;
+    text-align: left;
+}
+
+.section-description {
+    display: inline-block;
+}
+
+.section-description-mobile {
+    display: none;
+}
+
 .footer {
     min-height: 35px;
 }
@@ -165,6 +190,14 @@ html{
     .board-card img {
         height: 150px !important;
     }
+
+    .section-description {
+        display: none;
+    }
+    
+    .section-description-mobile {
+        display: inline-block;
+    }
 }
 
 /* Tablets, Ipad */
@@ -180,5 +213,9 @@ html{
 
     .fullheight {
         min-height: 100vh;
+    }
+
+    .food-description {
+        max-width: 65%;
     }
 }
