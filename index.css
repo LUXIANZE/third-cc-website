@@ -191,8 +191,11 @@ html{
         height: 150px !important;
     }
 
+
     .mobile-iframe {
         padding: 0;
+    }
+
     .section-description {
         display: none;
     }
