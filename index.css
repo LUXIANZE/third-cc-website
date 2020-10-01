@@ -165,6 +165,10 @@ html{
     .board-card img {
         height: 150px !important;
     }
+
+    .mobile-iframe {
+        padding: 0;
+    }
 }
 
 /* Tablets, Ipad */
