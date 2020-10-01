@@ -233,6 +233,10 @@ html{
         min-height: 100vh;
     }
 
+    .last-page {
+        min-height: 95vh;
+    }
+
     .food-description {
         max-width: 65%;
     }
