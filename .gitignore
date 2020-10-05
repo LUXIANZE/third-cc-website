@@ -6,3 +6,5 @@ node_modules/
 
 # Exclude MacOS file
 .DS_Store
+
+.firebase
