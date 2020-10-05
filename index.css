@@ -200,8 +200,16 @@ html{
         font-size: 18px;
     }
 
+    .director-board > div{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .board-card span {
+        font-size: 0.75rem;
+    }
     .board-card img {
-        height: 150px !important;
+        height: 80px !important;
     }
 
 
