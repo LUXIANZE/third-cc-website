@@ -97,6 +97,7 @@ html{
     text-align: left;
     min-height: 150px;
     border-radius: 15px;
+    min-width: 70%;
 }
 
 .affix {
