@@ -1,21 +1,354 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <title>UM-Third CC</title>
+        <title>叁舍 鱼之家</title>
+        <link rel="Site Icon" type="image/x-icon" href="static/logo/Logo-coloured.ico">
+
+        <!-- Bootstrap CSS CDN link, must load before other style sheet-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Mobile first metatag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <h1>
-            TODO:
-        </h1>
-        <ul>
-            <li>SEO</li>
-            <li>About Page</li>
-            <li>Info Page</li>
-            <li>Contact Us</li>
-            <li>Resources</li>
-            <li>Blog Posts(can be updated from Web App)</li>
-            <li>BOD (can be updated from Web App)</li>
-            <li>Link to Web App (Member registration))</li>
-        </ul>
+
+        <!-- SIDE NAV BAR -->
+        <div id="homePageSideNavBar" class="sideNavBar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#welcome">Welcome</a>
+            <a href="#info">Info</a>
+            <a href="#about">About</a>
+            <a href="#bod">Board of Director</a>
+            <a href="#activities">Activities</a>
+            <a href="#food">Food</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Button to open SideNavBar -->
+        <span class="openSideNavBarButton" onclick="openNav()">&#9776;</span>
+
+        <div id="main" class="background1">
+
+            <!-- Masking Page when nav bar is opened -->
+            <div id="pushedPageMask" onclick="closeNav()" style="display: none;"></div>
+
+            <!-- WELCOME PAGE -->
+            <div id="welcome" class="fullheight container-fluid text-center">
+                <h2 class="title">叁舍首页</h2>
+                <div class="row align-items-center mt-5" >
+                    <div class="col-11 col-md-8 my-2 mobile-iframe">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://youtube.com/embed/NXbOAY4Bc8Y?autoplay=1" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-11 col-md-3 bg-light py-5">
+                        <label>心动了？想得到更多最新更新？</label>
+                        <br/>
+                        <button class="btn-success">马上注册</button>
+                        <br/>
+                        <p class="mt-4"><a href="#">已经注册了？点我进行登入</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Page -->
+            <div id="info" class="fullheight container-fluid">
+                <h2 class="title text-center">资讯</h2>
+                <div id="checklist" class="row pl-3"></div>
+            </div>
+
+            <!-- ABOUT PAGE -->
+            <div id="about" class="fullheight container-fluid text-center">
+                <h2 class="title">关于叁舍</h2>
+                <div class="row align-items-center mt-5 px-3">
+                    <div class="col-md-6 text-left px-5">
+                        <div id="what-is-third-cc">
+                            <h5><b>叁舍是马来亚大学（马大）第三宿舍的一个华裔团体</b></h5>
+                            <p class="about-describe">
+                                叁舍是一个您放松身心并结交单身生活的。
+                                叁舍通常称为<b>鱼之家</b>。
+                                叁舍的所有成员都被充当鱼儿，而叁舍就是这些鱼儿们的家。
+                                叁舍不仅仅是当下住在第三宿舍的学子的团体。
+                                尽管您已经从马大毕业或不住在第三宿舍，叁舍的家门都为你而打开。
+                                叁舍随时欢迎您的加入，携手相伴留下美好的回忆。
+                            </p>
+                        </div>
+                        <div id="mission-vision" class="w-75 mx-auto text-center mt-5">
+                            <h3>使命</h3>
+                            <p class="mission">马大华裔学生建立相互联系并释放压力的平台</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-items-center text-center">
+                        <img src="static/images/fishes.jpg" width="65%" alt="about third-cc"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOD PAGE -->
+            <div id="bod" class="fullheight container-fluid text-center">
+                <h2 class="title">委员会 2020/2021</h2>
+                <div class="row justify-content-center align-items-center director-board" id="director-head">
+                    <!-- Layer 1: Head -->
+                    <div class="col-4">
+                        <div class="board-card">
+                            <span>鱼头<br>(CC Head)</span>
+                            <img src="./static/images/director/CCHead.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>俊延</span>
+                        </div>
+                        <div class="board-card">
+                            <span>鱼尾<br>(Vice CC Head)</span>
+                            <img src="./static/images/director/ViceCCHead.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>佳薇</span>
+                        </div>
+                    </div>
+                    <!-- Layer 2: Father -->
+                    <div class="col-4">
+                        <div class="board-card">
+                            <span>金龙鱼爸<br>(JinLong Father)</span>
+                            <img src="./static/images/director/JinLongFather.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>Jeffery</span>
+                        </div>
+                        <div class="board-card">
+                            <span>七彩鱼爸<br>(QiCai Father)</span>
+                            <img src="./static/images/director/QiCaiFather.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>国喜</span>
+                        </div>
+                        <div class="board-card">
+                            <span>比目鱼爸<br>(BiMu Father)</span>
+                            <img src="./static/images/director/BiMuFather.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>浩宇</span>
+                        </div>
+                        <div class="board-card">
+                            <span>孔雀鱼爸<br>(Peacock Father)</span>
+                            <img src="./static/images/director/PeacockFather.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>正鸿</span>
+                        </div>
+                        <div class="board-card">
+                            <span>小丑鱼爸<br>(Nemo Father)</span>
+                            <img src="./static/images/director/NemoFather.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>培杰</span>
+                        </div>
+                    </div>
+                    <!-- Layer 2: Father -->
+                    <div class="col-4">
+                        <div class="board-card">
+                            <span>金龙鱼妈<br>(JinLong Mother)</span>
+                            <img src="./static/images/director/JinLongMother.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>慧诗</span>
+                        </div>
+                        <div class="board-card">
+                            <span>七彩鱼妈<br>(QiCai Mother)</span>
+                            <img src="./static/images/director/QiCaiMother.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>俊廷</span>
+                        </div>
+                        <div class="board-card">
+                            <span>比目鱼妈<br>(BiMu Mother)</span>
+                            <img src="./static/images/director/BiMuMother.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>敏君</span>
+                        </div>
+                        <div class="board-card">
+                            <span>孔雀鱼妈<br>(Peacock Mother)</span>
+                            <img src="./static/images/director/PeacockMother.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>美清</span>
+                        </div>
+                        <div class="board-card">
+                            <span>小丑鱼妈<br>(Nemo Mother)</span>
+                            <img src="./static/images/director/NemoMother.jpg" class="img-fluid" alt="director 3rdcc 2020/2021"/>
+                            <span>艺展</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVITIES PAGE -->
+            <div class="wrapper">
+                <div id="activities" class="fullheight container">
+                    <h2 class="title text-center">活动项目</h2>
+                    <p>叁舍过往主办的活动</p>
+                    <div class="col-lg-12 col-sm-12 my-2">
+                        <div class="row my-auto">
+                            <div class="col-lg-6 col-sm-12 my-2">
+                                <div class="card my-2" style="height: 100%;">
+                                    <div class="card-header">
+                                        <h5>中秋节</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="./static/images/MoonCakeFestival.png" class="img_fluid" style="object-fit: cover; width: 100%;"/>
+                                        <div class="card-text">
+                                            <p>
+                                                新生们会和学长姐一起去参与中秋节游行，有时还会相约喝茶。当然也少不了马大灯笼节提供的精彩表演及免费月饼。所接触到的马大灯笼节，也是很多人在马达所参与的第一个与中华文化相关的大型活动。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 my-2">
+                                <div class="card my-2" style="height: 100%;">
+                                    <div class="card-header">
+                                        <h5>毕业典礼</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="./static/images/convo.png" class="img_fluid" style="object-fit: cover; width: 100%;"/>
+                                        <div class="card-text">
+                                            <p>
+                                                毕业季，也是大学生涯最最少不了的一环。学弟妹将为学长姐们庆祝欢呼，祝福他们踏出校园后永远一帆风顺。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-auto">
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="card my-2">
+                                    <div class="card-header">
+                                        <h5>叁舍旅行</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="./static/images/cctrip.png" class="img_fluid" style="object-fit: cover; width: 100%;"/>
+                                        <div class="card-text">
+                                            <p>
+                                                主要是为了让大家联络感情，在喘不过气的校园生活中，放慢脚步一起体验学习外的一切一切。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Food Page -->
+            <div id="food" class="fullheight container-fluid">
+                <h2 class="title text-center">美食推荐</h2>
+                <div id="foodlist" class="row">
+                    <div class="col-md-4 my-3 px-3 section-description-mobile">
+                        <h5>马大学子热门推荐的美食。点击食物可得到该美食的导航位置。享受你的美食。</h5>
+                        <p><i>*图片仅供参考</i></p>
+                    </div>
+                    <div class="col-md-8 my-2 text-center">
+                        <a href="https://goo.gl/maps/norFfvhooLEAV5BRA" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/KimSengZhapFan.jpg" alt="food around UM Mixed Rice" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> 金城茶餐室</span>
+                                    <span class="d-block"><b>详情:</b> Seksyen 17的茶餐室。以便宜的学生价杂饭而闻名。还有其他煮炒和汤面在这里售卖。</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/A3jD6Qwg5fZDSNu8A" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/NasiKukusKK7.jpg" alt="food around UM Nasi Kukus" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> Nasi Kukus KK7</span>
+                                    <span class="d-block"><b>详情:</b> 第七宿舍著名的蒸米饭。只需RM5还可免费加饭。每天开放，包括假期。午餐和晚餐时间的人潮较多</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/LoTCLfStZGA99T9F8" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/NasiLemakBumbung.jpg" alt="food around UM Nasi Lemak" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> Seapark Nasi Lemak Bumbung</span>
+                                    <span class="d-block"><b>详情:</b> 马大附近的夜宵美食。贩卖美味的椰浆饭和其他mamak食品。服务很快，通常在下单后10分钟内食物即可到达。</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/19R4ESGZkCoVmVkF7" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/ChilliPanMee.jpg" alt="food around UM Pan Mee" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> 辣椒板面</span>
+                                    <span class="d-block"><b>详情:</b> SS2著名的板面餐厅。以实惠的价格提供各种面食。</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/QYyqLAvmYsLszPNYA" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/Boran.jpg" alt="food around UM Boran Thai Food" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> Boran Seapark</span>
+                                    <span class="d-block"><b>详情:</b> 经典的泰国美食餐厅。这里提供泰式奶茶和泰式冰咖啡。强力推荐他们的美味五花肉。</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/X9kHf1hrRxgEXU6k7" target="_blank">
+                            <div class="food-card">
+                                <img src="./static/images/food/RibsKing.jpg" alt="food around UM Ribs King" class="food-img">
+                                <div class="food-description align-middle">
+                                    <span class="d-block"><b>店名:</b> 排骨王</span>
+                                    <span class="d-block"><b>详情:</b> Taman Paramount的非清真餐厅。服务各种美味多汁的猪排饭。干净舒适的用餐场所。该地区有两间分行。</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 my-3 px-3 section-description" id="food-section-description">
+                        <div>
+                            <h5>马大学子热门推荐的美食。点击食物可得到该美食的导航位置。享受你的美食。</h5>
+                            <p><i>*图片仅供参考</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div id="contact" class="fullheight container-fluid last-page">
+                <h2 class="title text-center">联系我们</h2>
+                <div class="row align-items-center text-center my-4">
+                    <div class="col-md-6">
+                        <img src="static/images/contact-us.jpg" width="90%">
+                    </div>
+                    <div class="col-md-6 contact-wrapper">
+                        <h3>查询表</h3>
+                        <div id="contact-form" class="contact-form text-center">
+                            <input type="text" id="name" name="name" placeholder="你的姓名..."><br>
+                            <input type="text" id="email" name="email" placeholder="你的电子邮件地址..."><br>
+                            <textarea id="enquiry" name="enquiry" placeholder="您的反馈/查询/评论..."></textarea><br>
+                            <p class="error"></p>
+                            <button id="contact-form-submit" class="submit-btn btn btn-success">提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer" class="footer fixed-bottom bg-dark text-center">
+                <h5 class="text-white my-2">UM Third-CC @2020</h5>
+            </footer>
+
+        </div>
+        
+        <!-- Boostrap js CDN link-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+            onload = LoadPreset()
+
+            function LoadPreset(){
+                document.getElementById("homePageSideNavBar").style.height = screen.height;
+            }
+
+            function openNav() {
+              document.getElementById("homePageSideNavBar").style.width = "250px";
+              document.getElementById("main").classList.remove("pullStyle");
+              document.getElementById("main").classList.add("pushStyle");
+              document.getElementById("pushedPageMask").style.removeProperty("display");
+              document.getElementById("pushedPageMask").classList.add("pageMaskStyle");
+            }
+            
+            function closeNav() {
+              document.getElementById("homePageSideNavBar").style.width = "0";
+              document.getElementById("main").classList.remove("pushStyle");
+              document.getElementById("main").classList.add("pullStyle");
+              document.getElementById("pushedPageMask").style.display = "none";
+              document.getElementById("pushedPageMask").classList.remove("pageMaskStyle");
+            }
+            </script>
     </body>
 </html>
+<script src="./js/info.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./js/foodList.js"></script>
